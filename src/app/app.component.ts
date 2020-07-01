@@ -62,7 +62,7 @@ export class AppComponent implements OnInit{
     }else if(confirmarpassword.value === ""){
       alert("Complete el campo Confirmar Password");
     }else{
-      alert("Su nombre es : "+primerapellido+" "+segundoapellido+" "+nombre+" y completastes exitosamente el formulario");
+      alert("Su nombre es : "+primerapellido+" "+segundoapellido+" "+nombre+" y completaste exitosamente el formulario");
     //alert("Your primerapellido is : "+primerapellido);
     //alert("Your segundoapellido is : "+segundoapellido);
     //alert("Your ssn is : "+ssn);

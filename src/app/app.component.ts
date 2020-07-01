@@ -39,17 +39,41 @@ export class AppComponent implements OnInit{
   }
   
   onClickSubmit(nombre,primerapellido,segundoapellido,ssn,postal,dia,mes,anio,email,password,confirmarpassword){
-    alert("Your nombre is : "+nombre);
-    alert("Your primerapellido is : "+primerapellido);
-    alert("Your segundoapellido is : "+segundoapellido);
-    alert("Your ssn is : "+ssn);
-    alert("Your postal is : "+postal);
-    alert("Your dia is : "+dia);
-    alert("Your mes is : "+mes);
-    alert("Your anio is : "+anio);
-    alert("Your email is : "+email);
-    alert("Your password is : "+password);
-    alert("Your confirmarpassword is : "+confirmarpassword);
+    if(nombre.value === ""){
+      alert("Complete el campo Nombre");
+    }else if(primerapellido.value === ""){
+      alert("Complete el campo Primer Apellido");
+    }else if(segundoapellido.value === ""){
+      alert("Complete el campo Segundo Apellido");
+    }else if(ssn.value === ""){
+      alert("Complete el campo SSN");
+    }else if(postal.value === ""){
+      alert("Complete el campo Códigi Postal");
+    }else if(dia.value === ""){
+      alert("Complete el campo Día");
+    }else if(mes.value === ""){
+      alert("Complete el campo Mes");
+    }else if(anio.value === ""){
+      alert("Complete el campo Año");
+    }else if(email.value === ""){
+      alert("Complete el campo Email");
+    }else if(password.value === ""){
+      alert("Complete el campo Password");
+    }else if(confirmarpassword.value === ""){
+      alert("Complete el campo Confirmar Password");
+    }else{
+      alert("Su nombre es : "+primerapellido+" "+segundoapellido+" "+nombre+" y completastes exitosamente el formulario");
+    //alert("Your primerapellido is : "+primerapellido);
+    //alert("Your segundoapellido is : "+segundoapellido);
+    //alert("Your ssn is : "+ssn);
+    //alert("Your postal is : "+postal);
+    //alert("Your dia is : "+dia);
+    //alert("Your mes is : "+mes);
+    //alert("Your anio is : "+anio);
+    //alert("Your email is : "+email);
+    //alert("Your password is : "+password);
+    //alert("Your confirmarpassword is : "+confirmarpassword);
+    }
   }
   ngOnInit(){}
   
